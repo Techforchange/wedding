@@ -1,17 +1,19 @@
 
 body {
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
 }
 
 .main {
-  background-color: rosybrown;
+  background-color: #FAF6F2;
   font-family: 'Lato', sans-serif;
-  color: white;
-  display: flex;
+  color: #B08401;
+  /* display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 30px 0px;
-  height: calc(100vh - 60px);
+  align-items: center; */
+  /* padding: 30px 0px; */
+  height: 100vh;
 }
 
 .main-content {
@@ -20,29 +22,62 @@ body {
   align-items: center;
 }
 
-.nav-bar {
+.main-nav {
+  list-style-type: none;
   display: none;
 }
 
-.nav-item {
-  text-decoration: none;
-  color: white;
-  font-size: 1rem;
+.main-nav li {
+  text-align: center;
+  margin: 15px auto;
 }
 
-a:hover{
-  text-decoration: underline;
+.logo {
+  background-image: url('../static/images/ring.png');
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 20px;
+  text-indent: -9999px;
+  width: 40px;
+  height: 40px;
+  background-size: 100% 100%;
+}
+
+.nav-links,
+.logo {
+  color: #B08401;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+.nav-bar {
+  padding-bottom: 10px;
+}
+
+.navbar-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 1.875rem;
+}
+
+.active {
+  display: contents;
 }
 
 .names {
   font-family: 'Parisienne', cursive;
   margin: 20px 0px 15px;
   font-size: 2.5rem;
+  opacity: .6;
 }
 
 .date {
   margin-bottom: 35px;
   font-size: 1.2rem;
+  font-weight: bolder;
 }
 
 .image-wrapper {
@@ -59,8 +94,17 @@ a:hover{
 }
 
 img {
-  opacity: 0.7;
+  opacity: .9;
 }
+
+.content.hide {
+  display: none;
+}
+
+.content.item--active {
+  display: block;
+}
+
 
 @media only screen and (min-width: 700px) {
   .main {
@@ -68,18 +112,25 @@ img {
     height: 100vh;
   }
 
-  .main-content {
-    margin-top: 30px;
-  }
-
   .nav-bar {
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
   }
 
-  .nav-item {
+  .main-nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .main-nav li {
+    margin: 0;
+  }
+
+
+  .nav-links {
     font-size: 1.2rem;
   }
 
@@ -90,6 +141,21 @@ img {
   .image-wrapper {
     max-width: 900px;
   }
+
+  .navbar-toggle {
+    display: none;
+  }
+
+  .logo {
+    margin-top: 0;
+    margin-left: 0;
+    width: 45px;
+    height: 40px;
+  }
+
+  a:hover{
+    text-decoration: underline;
+  }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -97,12 +163,8 @@ img {
     height: max-content;
   }
 
-  .nav-bar {
-    width: 80%;
-  }
-
   .names {
-    margin: 40px 0px 5px;
+    margin: 40px 0px 15px;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -110,3 +172,4 @@ img {
     padding: 30px 200px;
   }
 }
+padding: 30px 200px;
