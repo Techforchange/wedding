@@ -153,9 +153,14 @@ img {
     height: 40px;
   }
 
-  a:hover{
+  a:hover {
     text-decoration: underline;
   }
+
+  a:active {
+    text-decoration: underline;
+  }
+
 }
 
 @media only screen and (min-width: 1000px) {
