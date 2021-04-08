@@ -1,0 +1,175 @@
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.main {
+  background-color: #FAF6F2;
+  font-family: 'Lato', sans-serif;
+  color: #B08401;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  /* padding: 30px 0px; */
+  height: 100vh;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-nav {
+  list-style-type: none;
+  display: none;
+}
+
+.main-nav li {
+  text-align: center;
+  margin: 15px auto;
+}
+
+.logo {
+  background-image: url('../static/images/ring.png');
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 20px;
+  text-indent: -9999px;
+  width: 40px;
+  height: 40px;
+  background-size: 100% 100%;
+}
+
+.nav-links,
+.logo {
+  color: #B08401;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+.nav-bar {
+  padding-bottom: 10px;
+}
+
+.navbar-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 1.875rem;
+}
+
+.active {
+  display: contents;
+}
+
+.names {
+  font-family: 'Parisienne', cursive;
+  margin: 20px 0px 15px;
+  font-size: 2.5rem;
+  opacity: .6;
+}
+
+.date {
+  margin-bottom: 35px;
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+.image-wrapper {
+  max-width: 900px;
+  text-align: center;
+}
+
+.image {
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+img {
+  opacity: .9;
+}
+
+.content.hide {
+  display: none;
+}
+
+.content.item--active {
+  display: block;
+}
+
+
+@media only screen and (min-width: 700px) {
+  .main {
+    padding: 80px 50px;
+    height: 100vh;
+  }
+
+  .nav-bar {
+    display: flex;
+    width: 100%;
+    /* justify-content: space-between; */
+    align-items: center;
+  }
+
+  .main-nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .main-nav li {
+    margin: 0;
+  }
+
+
+  .nav-links {
+    font-size: 1.2rem;
+  }
+
+  .names {
+    font-size: 3rem;
+  }
+
+  .image-wrapper {
+    max-width: 900px;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+
+  .logo {
+    margin-top: 0;
+    margin-left: 0;
+    width: 45px;
+    height: 40px;
+  }
+
+  a:hover{
+    text-decoration: underline;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .main {
+    height: max-content;
+  }
+
+  .names {
+    margin: 40px 0px 15px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .main {
+    padding: 30px 200px;
+  }
+}
+padding: 30px 200px;
