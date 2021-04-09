@@ -123,6 +123,7 @@ a.item--active {
 .content-title {
   font-size: 2rem;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .content {
@@ -133,6 +134,7 @@ a.item--active {
 
 .main-content__paragraph-title {
   margin-bottom: 10px;
+  text-decoration: underline;
   font-size: 1rem;
   font-weight: 800;
   text-align: center;
@@ -141,6 +143,7 @@ a.item--active {
 .main-content__paragraph-text {
   font-size: 1rem;
   line-height: 1.3;
+  font-weight: 800;
   text-align: center;
 }
 
