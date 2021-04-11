@@ -26,4 +26,10 @@ $('.nav-bar a').click(function(event){
   var target_tab_selector = $(this).attr('href');
   $(target_tab_selector).removeClass('hide');
   $(target_tab_selector).addClass('item--active');
+
+  var navBarToggle = document.getElementById('navbar-toggle');
+
+  if(navBarToggle) {
+    navBar.classList.toggle('active');
+  }
 })
