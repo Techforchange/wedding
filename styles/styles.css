@@ -133,6 +133,7 @@ a.item--active {
   margin-bottom: 30px;
   text-align: center;
   margin-top: 30px;
+  font-family: 'Lobster Two', cursive;
 }
 
 .content {
@@ -143,10 +144,10 @@ a.item--active {
 
 .main-content__paragraph-title {
   margin-bottom: 10px;
-  text-decoration: underline;
   font-size: 1.3rem;
   font-weight: 800;
   text-align: center;
+  text-decoration: underline;
 }
 
 .main-content__paragraph-text {
@@ -155,7 +156,6 @@ a.item--active {
   font-weight: 800;
   text-align: center;
   background-color: #FAF6F2;
-  font-family: 'Lato', sans-serif;
 }
 
 .main-content__image {
@@ -234,9 +234,15 @@ a.item--active {
   width: 90%;
 }
 
+.main-content__paragraph-title.paragraph-story {
+  font-family: 'Lobster Two', cursive;
+  text-decoration: none;
+}
+
 @media only screen and (min-width: 700px) {
   .main-content__paragraph-title.paragraph-story {
     margin-bottom: 20px;
+    font-size: 2rem;
   }
 
   .main-content__our-story {
@@ -250,7 +256,7 @@ a.item--active {
 
   .nav-bar {
     display: flex;
-    width: 100%; */
+    width: 100%;
     align-items: center;
   }
 
@@ -310,7 +316,7 @@ a.item--active {
   }
 
   .content-title {
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin-bottom: 50px;
   }
 
@@ -384,7 +390,6 @@ a.item--active {
   height: auto;
   width: 300px;
 }
-
 }
 
 @media only screen and (min-width: 1000px) {
