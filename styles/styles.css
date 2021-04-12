@@ -222,6 +222,19 @@ a.item--active {
   border: 5px solid;
 }
 
+.gift-page__box-content {
+  margin: 10px;
+}
+
+.gift-page__box {
+  border: 5px solid #8d6a01;
+  padding: 10px;
+  max-width: 300px;
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 40px;
+}
+
 .rsvp-link {
   color: #B08401;
   text-decoration: none;
@@ -404,10 +417,6 @@ a.item--active {
 
   .names {
     margin: 40px 0px 15px;
-  }
-
-  .content ~ .content {
-    margin-top: 50px;
   }
 
   .main-content__paragraph {
