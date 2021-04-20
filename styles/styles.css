@@ -270,7 +270,15 @@ a.item--active {
 
 }
 
+.main-content--form {
+  width: 350px;
+}
+
 @media only screen and (min-width: 700px) {
+
+  .main-content--form {
+    width: 650px;
+  }
 
   .main-content__mobile {
     display: none;
@@ -463,6 +471,11 @@ a.item--active {
 }
 
 @media only screen and (min-width: 1000px) {
+
+  .main-content--form {
+    width: 800px;
+  }
+
   .main-page-rsvp-text {
     font-size: 1.3rem;
   }
