@@ -463,6 +463,13 @@ a.item--active {
 }
 
 @media only screen and (min-width: 1000px) {
+  .main-page-rsvp-text {
+    font-size: 1.3rem;
+  }
+
+  .main-paragraph-rsvp {
+    margin-bottom: 20px;
+  }
 
   .nav-links {
     font-size: 1.3rem;
